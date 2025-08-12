@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -45,16 +46,19 @@
             comboBox1 = new ComboBox();
             textBox7 = new TextBox();
             button1 = new Button();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.MenuBar;
-            label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(12, 26);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 12F);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(51, 31);
             label1.Name = "label1";
-            label1.Size = new Size(70, 15);
+            label1.Size = new Size(91, 21);
             label1.TabIndex = 0;
             label1.Text = "Student No:";
             label1.Click += label1_Click;
@@ -62,10 +66,12 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.MenuBar;
-            label2.Location = new Point(195, 26);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 12F);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(234, 31);
             label2.Name = "label2";
-            label2.Size = new Size(56, 15);
+            label2.Size = new Size(74, 21);
             label2.TabIndex = 1;
             label2.Text = "Program:";
             label2.Click += label2_Click;
@@ -73,10 +79,12 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = SystemColors.MenuBar;
-            label3.Location = new Point(12, 87);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 12F);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(51, 92);
             label3.Name = "label3";
-            label3.Size = new Size(66, 15);
+            label3.Size = new Size(87, 21);
             label3.TabIndex = 2;
             label3.Text = "Last Name:";
             label3.Click += label3_Click;
@@ -84,10 +92,12 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = SystemColors.MenuBar;
-            label4.Location = new Point(196, 87);
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 12F);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(235, 92);
             label4.Name = "label4";
-            label4.Size = new Size(67, 15);
+            label4.Size = new Size(89, 21);
             label4.TabIndex = 3;
             label4.Text = "First Name:";
             label4.Click += label4_Click;
@@ -95,81 +105,89 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = SystemColors.MenuBar;
-            label5.Location = new Point(378, 87);
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 12F);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(417, 92);
             label5.Name = "label5";
-            label5.Size = new Size(82, 15);
+            label5.Size = new Size(107, 21);
             label5.TabIndex = 4;
             label5.Text = "Middle Name:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = SystemColors.MenuBar;
-            label6.Location = new Point(12, 154);
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 12F);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(15, 139);
             label6.Name = "label6";
-            label6.Size = new Size(31, 15);
+            label6.Size = new Size(40, 21);
             label6.TabIndex = 5;
             label6.Text = "Age:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.BackColor = SystemColors.MenuBar;
-            label7.Location = new Point(192, 154);
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 12F);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(195, 139);
             label7.Name = "label7";
-            label7.Size = new Size(71, 15);
+            label7.Size = new Size(91, 21);
             label7.TabIndex = 6;
             label7.Text = "Contact No:";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.BackColor = SystemColors.MenuBar;
-            label8.Location = new Point(12, 221);
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 12F);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(51, 226);
             label8.Name = "label8";
-            label8.Size = new Size(52, 15);
+            label8.Size = new Size(69, 21);
             label8.TabIndex = 7;
             label8.Text = "Address:";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 44);
+            textBox1.Location = new Point(51, 52);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(177, 23);
             textBox1.TabIndex = 8;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(12, 105);
+            textBox2.Location = new Point(51, 113);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(174, 23);
             textBox2.TabIndex = 9;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(196, 105);
+            textBox3.Location = new Point(235, 113);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(170, 23);
             textBox3.TabIndex = 10;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(378, 105);
+            textBox4.Location = new Point(417, 113);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(170, 23);
             textBox4.TabIndex = 11;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(12, 184);
+            textBox5.Location = new Point(12, 166);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(174, 23);
             textBox5.TabIndex = 12;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(196, 184);
+            textBox6.Location = new Point(196, 166);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(174, 23);
             textBox6.TabIndex = 13;
@@ -177,14 +195,15 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(196, 44);
+            comboBox1.Location = new Point(235, 52);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
+            comboBox1.Size = new Size(265, 23);
             comboBox1.TabIndex = 14;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(12, 239);
+            textBox7.Location = new Point(51, 247);
             textBox7.Multiline = true;
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(536, 96);
@@ -192,39 +211,56 @@
             // 
             // button1
             // 
-            button1.Location = new Point(218, 363);
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Location = new Point(257, 371);
             button1.Name = "button1";
             button1.Size = new Size(83, 34);
             button1.TabIndex = 16;
             button1.Text = "Next";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveBorder;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(textBox6);
+            panel1.Controls.Add(textBox5);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(label6);
+            panel1.Location = new Point(38, 24);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(560, 389);
+            panel1.TabIndex = 17;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SlateGray;
-            ClientSize = new Size(573, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(633, 463);
+            Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox7);
             Controls.Add(comboBox1);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(panel1);
             Name = "Form1";
             Text = "Form1";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -248,5 +284,6 @@
         private ComboBox comboBox1;
         private TextBox textBox7;
         private Button button1;
+        private Panel panel1;
     }
 }
