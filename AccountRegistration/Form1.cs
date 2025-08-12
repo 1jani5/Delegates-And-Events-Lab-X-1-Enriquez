@@ -15,7 +15,7 @@ namespace AccountRegistration
             InitializeComponent();
             panel1.BackColor = Color.FromArgb(100, Color.WhiteSmoke);
 
-           
+
             comboBox1.Items.AddRange(new string[]
             {
                 "BS Computer Science",
@@ -44,12 +44,12 @@ namespace AccountRegistration
                 "Bachelor of Secondary Education"
             });
 
-            
+
             if (comboBox1.Items.Count > 0)
                 comboBox1.SelectedIndex = 0;
         }
 
-        
+
 
 
         private void label1_Click(object sender, EventArgs e)
@@ -135,7 +135,17 @@ namespace AccountRegistration
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
