@@ -15,7 +15,7 @@ namespace AccountRegistration
             InitializeComponent();
             panel1.BackColor = Color.FromArgb(100, Color.WhiteSmoke);
 
-            // Fill combobox with sample college courses
+           
             comboBox1.Items.AddRange(new string[]
             {
                 "BS Computer Science",
@@ -44,7 +44,7 @@ namespace AccountRegistration
                 "Bachelor of Secondary Education"
             });
 
-            // Optional: Select first item by default
+            
             if (comboBox1.Items.Count > 0)
                 comboBox1.SelectedIndex = 0;
         }
