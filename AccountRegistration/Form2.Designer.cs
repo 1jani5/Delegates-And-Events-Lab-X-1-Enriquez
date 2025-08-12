@@ -47,6 +47,7 @@
             label16 = new Label();
             button1 = new Button();
             panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -55,7 +56,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 15F);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(55, 55);
+            label1.Location = new Point(13, 14);
             label1.Name = "label1";
             label1.Size = new Size(116, 28);
             label1.TabIndex = 0;
@@ -67,7 +68,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 15F);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(55, 102);
+            label2.Location = new Point(13, 61);
             label2.Name = "label2";
             label2.Size = new Size(92, 28);
             label2.TabIndex = 1;
@@ -79,7 +80,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 15F);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(55, 147);
+            label3.Location = new Point(13, 106);
             label3.Name = "label3";
             label3.Size = new Size(112, 28);
             label3.TabIndex = 2;
@@ -91,7 +92,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 15F);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(55, 187);
+            label4.Location = new Point(13, 146);
             label4.Name = "label4";
             label4.Size = new Size(115, 28);
             label4.TabIndex = 3;
@@ -103,7 +104,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 15F);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(55, 230);
+            label5.Location = new Point(13, 189);
             label5.Name = "label5";
             label5.Size = new Size(140, 28);
             label5.TabIndex = 4;
@@ -115,7 +116,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 15F);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(55, 269);
+            label6.Location = new Point(13, 228);
             label6.Name = "label6";
             label6.Size = new Size(56, 28);
             label6.TabIndex = 5;
@@ -127,7 +128,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 15F);
             label7.ForeColor = Color.Black;
-            label7.Location = new Point(55, 311);
+            label7.Location = new Point(13, 270);
             label7.Name = "label7";
             label7.Size = new Size(121, 28);
             label7.TabIndex = 6;
@@ -139,7 +140,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 15F);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(56, 348);
+            label8.Location = new Point(14, 307);
             label8.Name = "label8";
             label8.Size = new Size(91, 28);
             label8.TabIndex = 7;
@@ -151,7 +152,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI", 15F);
             label9.ForeColor = Color.Black;
-            label9.Location = new Point(207, 55);
+            label9.Location = new Point(165, 14);
             label9.Name = "label9";
             label9.Size = new Size(65, 28);
             label9.TabIndex = 8;
@@ -163,7 +164,7 @@
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI", 15F);
             label10.ForeColor = Color.Black;
-            label10.Location = new Point(207, 102);
+            label10.Location = new Point(165, 61);
             label10.Name = "label10";
             label10.Size = new Size(76, 28);
             label10.TabIndex = 9;
@@ -175,7 +176,7 @@
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Segoe UI", 15F);
             label11.ForeColor = Color.Black;
-            label11.Location = new Point(207, 147);
+            label11.Location = new Point(165, 106);
             label11.Name = "label11";
             label11.Size = new Size(76, 28);
             label11.TabIndex = 10;
@@ -187,7 +188,7 @@
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("Segoe UI", 15F);
             label12.ForeColor = Color.Black;
-            label12.Location = new Point(207, 187);
+            label12.Location = new Point(165, 146);
             label12.Name = "label12";
             label12.Size = new Size(76, 28);
             label12.TabIndex = 11;
@@ -199,7 +200,7 @@
             label13.BackColor = Color.Transparent;
             label13.Font = new Font("Segoe UI", 15F);
             label13.ForeColor = Color.Black;
-            label13.Location = new Point(207, 230);
+            label13.Location = new Point(165, 189);
             label13.Name = "label13";
             label13.Size = new Size(76, 28);
             label13.TabIndex = 12;
@@ -211,7 +212,7 @@
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Segoe UI", 15F);
             label14.ForeColor = Color.Black;
-            label14.Location = new Point(207, 269);
+            label14.Location = new Point(165, 228);
             label14.Name = "label14";
             label14.Size = new Size(76, 28);
             label14.TabIndex = 13;
@@ -223,7 +224,7 @@
             label15.BackColor = Color.Transparent;
             label15.Font = new Font("Segoe UI", 15F);
             label15.ForeColor = Color.Black;
-            label15.Location = new Point(207, 311);
+            label15.Location = new Point(165, 270);
             label15.Name = "label15";
             label15.Size = new Size(76, 28);
             label15.TabIndex = 14;
@@ -235,7 +236,7 @@
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Segoe UI", 15F);
             label16.ForeColor = Color.Black;
-            label16.Location = new Point(207, 348);
+            label16.Location = new Point(165, 307);
             label16.Name = "label16";
             label16.Size = new Size(76, 28);
             label16.TabIndex = 15;
@@ -257,6 +258,22 @@
             // panel1
             // 
             panel1.BackColor = Color.Gainsboro;
+            panel1.Controls.Add(label16);
+            panel1.Controls.Add(label11);
+            panel1.Controls.Add(label15);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label14);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label13);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label12);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label10);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label9);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(label8);
             panel1.Location = new Point(37, 35);
             panel1.Name = "panel1";
             panel1.Size = new Size(512, 358);
@@ -269,28 +286,13 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(619, 477);
-            Controls.Add(label16);
-            Controls.Add(label15);
-            Controls.Add(label14);
-            Controls.Add(label13);
-            Controls.Add(label12);
-            Controls.Add(label11);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(panel1);
             Name = "Form2";
             Text = "Form2";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

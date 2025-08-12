@@ -56,7 +56,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(51, 31);
+            label1.Location = new Point(15, 7);
             label1.Name = "label1";
             label1.Size = new Size(91, 21);
             label1.TabIndex = 0;
@@ -69,7 +69,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(234, 31);
+            label2.Location = new Point(197, 7);
             label2.Name = "label2";
             label2.Size = new Size(74, 21);
             label2.TabIndex = 1;
@@ -82,7 +82,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 12F);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(51, 92);
+            label3.Location = new Point(13, 65);
             label3.Name = "label3";
             label3.Size = new Size(87, 21);
             label3.TabIndex = 2;
@@ -95,7 +95,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 12F);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(235, 92);
+            label4.Location = new Point(197, 68);
             label4.Name = "label4";
             label4.Size = new Size(89, 21);
             label4.TabIndex = 3;
@@ -108,7 +108,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 12F);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(417, 92);
+            label5.Location = new Point(379, 68);
             label5.Name = "label5";
             label5.Size = new Size(107, 21);
             label5.TabIndex = 4;
@@ -144,7 +144,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 12F);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(51, 226);
+            label8.Location = new Point(13, 199);
             label8.Name = "label8";
             label8.Size = new Size(69, 21);
             label8.TabIndex = 7;
@@ -226,10 +226,16 @@
             // 
             panel1.BackColor = SystemColors.ActiveBorder;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(textBox6);
             panel1.Controls.Add(textBox5);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label6);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label8);
             panel1.Location = new Point(38, 24);
             panel1.Name = "panel1";
             panel1.Size = new Size(560, 389);
@@ -243,7 +249,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(633, 463);
-            Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox7);
             Controls.Add(comboBox1);
@@ -251,11 +256,6 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(label8);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(panel1);
             Name = "Form1";
             Text = "Form1";
