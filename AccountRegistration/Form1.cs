@@ -107,7 +107,7 @@ namespace AccountRegistration
             StudentInfoClass.ContactNo = long.Parse(textBox6.Text);
             StudentInfoClass.Program = comboBox1.Text;
 
-            // Open FrmConfirm as dialog
+            // Open forrm2 na dialog
             Form2 frm = new Form2();
             if (frm.ShowDialog() == DialogResult.OK)
             {

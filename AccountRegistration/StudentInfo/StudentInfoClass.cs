@@ -19,6 +19,7 @@ namespace AccountRegistration.Delegates
             public static string MiddleName = " ";
             public static string Address = " ";
             public static string Program = " ";
+
             public static long Age = 0;
             public static long ContactNo = 0;
             public static long StudentNo = 0;

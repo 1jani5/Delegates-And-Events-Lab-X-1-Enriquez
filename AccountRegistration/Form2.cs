@@ -29,7 +29,7 @@ namespace AccountRegistration
             DelNumContactNo = new DelegateNumber(StudentInfoClass.GetContactNo);
             DelStudNo = new DelegateNumber(StudentInfoClass.GetStudentNo);
 
-            // Display data
+            // Display 
             label9.Text = DelStudNo(StudentInfoClass.StudentNo).ToString();
             label10.Text = DelProgram(StudentInfoClass.Program);
             label11.Text = DelLastName(StudentInfoClass.LastName);
