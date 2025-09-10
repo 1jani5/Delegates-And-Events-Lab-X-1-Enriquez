@@ -13,6 +13,8 @@ namespace AccountRegistration
         public Form1()
         {
             InitializeComponent();
+
+
             panel1.BackColor = Color.FromArgb(100, Color.WhiteSmoke);
 
 
@@ -80,8 +82,8 @@ namespace AccountRegistration
      string.IsNullOrEmpty(textBox3.Text) ||
      string.IsNullOrEmpty(textBox4.Text) ||
      string.IsNullOrEmpty(textBox5.Text) ||
-     string.IsNullOrEmpty(textBox6.Text) ||
-     string.IsNullOrEmpty(textBox7.Text))
+     string.IsNullOrEmpty(textBox6.Text))
+     
             {
                 MessageBox.Show("please Answer all the fields. ", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -101,7 +103,6 @@ namespace AccountRegistration
             StudentInfoClass.FirstName = textBox3.Text;
             StudentInfoClass.LastName = textBox2.Text;
             StudentInfoClass.MiddleName = textBox4.Text;
-            StudentInfoClass.Address = textBox7.Text;
             StudentInfoClass.Age = long.Parse(textBox5.Text);
             StudentInfoClass.StudentNo = long.Parse(textBox1.Text);
             StudentInfoClass.ContactNo = long.Parse(textBox6.Text);

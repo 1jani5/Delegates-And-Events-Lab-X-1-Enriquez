@@ -36,5 +36,12 @@ namespace AccountRegistration.Delegates
         public static long GetStudentNo(long number) => StudentNo;
 
 
+        public int SetStudentNo = 0;
+        public int SetContactNo = 0;
+        public string SetProgram = " ";
+        public string SetGender = " ";
+        public string SetBirthday = " ";
+        public string SetFullName = " ";
+
     }
 }
