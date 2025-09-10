@@ -148,7 +148,7 @@ namespace AccountRegistration
             }
             finally
             {
-                MessageBox.Show("Thank you for registering!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Please input again in the fields mention. ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
 
