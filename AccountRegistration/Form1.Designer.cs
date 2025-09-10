@@ -44,10 +44,12 @@
             textBox5 = new TextBox();
             textBox6 = new TextBox();
             comboBox1 = new ComboBox();
-            textBox7 = new TextBox();
             button1 = new Button();
             panel1 = new Panel();
             label9 = new Label();
+            label10 = new Label();
+            textBox8 = new TextBox();
+            dateTimePicker1 = new DateTimePicker();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,7 +59,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(16, 43);
+            label1.Location = new Point(63, 47);
             label1.Name = "label1";
             label1.Size = new Size(91, 21);
             label1.TabIndex = 0;
@@ -70,7 +72,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(198, 43);
+            label2.Location = new Point(245, 47);
             label2.Name = "label2";
             label2.Size = new Size(74, 21);
             label2.TabIndex = 1;
@@ -83,7 +85,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 12F);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(13, 101);
+            label3.Location = new Point(16, 107);
             label3.Name = "label3";
             label3.Size = new Size(87, 21);
             label3.TabIndex = 2;
@@ -96,7 +98,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 12F);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(197, 104);
+            label4.Location = new Point(200, 110);
             label4.Name = "label4";
             label4.Size = new Size(89, 21);
             label4.TabIndex = 3;
@@ -109,7 +111,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 12F);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(379, 104);
+            label5.Location = new Point(382, 110);
             label5.Name = "label5";
             label5.Size = new Size(107, 21);
             label5.TabIndex = 4;
@@ -121,7 +123,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 12F);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(16, 164);
+            label6.Location = new Point(97, 169);
             label6.Name = "label6";
             label6.Size = new Size(40, 21);
             label6.TabIndex = 5;
@@ -133,11 +135,12 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 12F);
             label7.ForeColor = Color.Black;
-            label7.Location = new Point(196, 164);
+            label7.Location = new Point(294, 237);
             label7.Name = "label7";
             label7.Size = new Size(91, 21);
             label7.TabIndex = 6;
             label7.Text = "Contact No:";
+            label7.Click += label7_Click;
             // 
             // label8
             // 
@@ -145,50 +148,50 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 12F);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(14, 224);
+            label8.Location = new Point(89, 240);
             label8.Name = "label8";
-            label8.Size = new Size(69, 21);
+            label8.Size = new Size(71, 21);
             label8.TabIndex = 7;
-            label8.Text = "Address:";
+            label8.Text = "Birthday:";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(13, 67);
+            textBox1.Location = new Point(60, 71);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(177, 23);
             textBox1.TabIndex = 8;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(13, 128);
+            textBox2.Location = new Point(16, 134);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(174, 23);
             textBox2.TabIndex = 9;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(197, 128);
+            textBox3.Location = new Point(200, 134);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(170, 23);
             textBox3.TabIndex = 10;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(379, 128);
+            textBox4.Location = new Point(382, 134);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(170, 23);
             textBox4.TabIndex = 11;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(13, 191);
+            textBox5.Location = new Point(94, 196);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(174, 23);
             textBox5.TabIndex = 12;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(197, 191);
+            textBox6.Location = new Point(295, 264);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(174, 23);
             textBox6.TabIndex = 13;
@@ -196,19 +199,11 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(197, 67);
+            comboBox1.Location = new Point(244, 71);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(265, 23);
             comboBox1.TabIndex = 14;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(13, 262);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(536, 96);
-            textBox7.TabIndex = 15;
             // 
             // button1
             // 
@@ -227,8 +222,10 @@
             // 
             panel1.BackColor = SystemColors.ActiveBorder;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(dateTimePicker1);
+            panel1.Controls.Add(textBox8);
+            panel1.Controls.Add(label10);
             panel1.Controls.Add(label9);
-            panel1.Controls.Add(textBox7);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(textBox4);
@@ -262,6 +259,32 @@
             label9.TabIndex = 17;
             label9.Text = "Account Registration Form";
             label9.Click += label9_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Segoe UI", 12F);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(293, 169);
+            label10.Name = "label10";
+            label10.Size = new Size(64, 21);
+            label10.TabIndex = 18;
+            label10.Text = "Gender:";
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(293, 196);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(174, 23);
+            textBox8.TabIndex = 19;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(89, 264);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 20;
             // 
             // Form1
             // 
@@ -297,9 +320,11 @@
         private TextBox textBox5;
         private TextBox textBox6;
         private ComboBox comboBox1;
-        private TextBox textBox7;
         private Button button1;
         private Panel panel1;
         private Label label9;
+        private Label label10;
+        private DateTimePicker dateTimePicker1;
+        private TextBox textBox8;
     }
 }
