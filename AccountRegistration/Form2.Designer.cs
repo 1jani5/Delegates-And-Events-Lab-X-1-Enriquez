@@ -235,7 +235,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 15F);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(184, 215);
+            label4.Location = new Point(184, 216);
             label4.Name = "label4";
             label4.Size = new Size(65, 28);
             label4.TabIndex = 18;

@@ -46,10 +46,10 @@
             comboBox1 = new ComboBox();
             button1 = new Button();
             panel1 = new Panel();
-            label9 = new Label();
-            label10 = new Label();
-            dateTimePicker1 = new DateTimePicker();
             comboBox2 = new ComboBox();
+            dateTimePicker1 = new DateTimePicker();
+            label10 = new Label();
+            label9 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -123,7 +123,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 12F);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(97, 169);
+            label6.Location = new Point(97, 184);
             label6.Name = "label6";
             label6.Size = new Size(40, 21);
             label6.TabIndex = 5;
@@ -184,14 +184,14 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(94, 196);
+            textBox5.Location = new Point(94, 211);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(174, 23);
             textBox5.TabIndex = 12;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(295, 264);
+            textBox6.Location = new Point(295, 279);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(174, 23);
             textBox6.TabIndex = 13;
@@ -210,9 +210,9 @@
             button1.BackColor = Color.Transparent;
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.Location = new Point(229, 364);
+            button1.Location = new Point(233, 336);
             button1.Name = "button1";
-            button1.Size = new Size(83, 34);
+            button1.Size = new Size(105, 53);
             button1.TabIndex = 16;
             button1.Text = "Next";
             button1.UseVisualStyleBackColor = false;
@@ -247,6 +247,33 @@
             panel1.Size = new Size(564, 410);
             panel1.TabIndex = 17;
             // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(295, 211);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(174, 23);
+            comboBox2.TabIndex = 21;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(89, 279);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 20;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Segoe UI", 12F);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(293, 184);
+            label10.Name = "label10";
+            label10.Size = new Size(64, 21);
+            label10.TabIndex = 18;
+            label10.Text = "Gender:";
+            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -259,33 +286,6 @@
             label9.TabIndex = 17;
             label9.Text = "Account Registration Form";
             label9.Click += label9_Click;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Segoe UI", 12F);
-            label10.ForeColor = Color.Black;
-            label10.Location = new Point(293, 169);
-            label10.Name = "label10";
-            label10.Size = new Size(64, 21);
-            label10.TabIndex = 18;
-            label10.Text = "Gender:";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(89, 264);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 20;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(295, 196);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(174, 23);
-            comboBox2.TabIndex = 21;
             // 
             // Form1
             // 

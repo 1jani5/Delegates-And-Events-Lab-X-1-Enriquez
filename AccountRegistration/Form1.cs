@@ -18,6 +18,7 @@ namespace AccountRegistration
             panel1.BackColor = Color.FromArgb(100, Color.WhiteSmoke);
 
 
+
             comboBox1.Items.AddRange(new string[]
             {
                 "BS Computer Science",
@@ -47,9 +48,25 @@ namespace AccountRegistration
             });
 
 
+
+
             if (comboBox1.Items.Count > 0)
                 comboBox1.SelectedIndex = 0;
+
+            comboBox2.Items.AddRange(new string[]
+        {
+                "Male",
+                "Female",
+
+        });
+            if (comboBox2.Items.Count > 0)
+                comboBox2.SelectedIndex = 0;
         }
+    
+
+
+        
+
 
 
 
@@ -76,37 +93,46 @@ namespace AccountRegistration
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text) ||
-     string.IsNullOrEmpty(comboBox1.Text) ||
-     string.IsNullOrEmpty(textBox2.Text) ||
-     string.IsNullOrEmpty(textBox3.Text) ||
-     string.IsNullOrEmpty(textBox4.Text) ||
-     string.IsNullOrEmpty(textBox5.Text) ||
-     string.IsNullOrEmpty(textBox6.Text))
-     
-            {
-                MessageBox.Show("please Answer all the fields. ", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (!long.TryParse(textBox5.Text, out long age) ||
-                !long.TryParse(textBox6.Text, out long contactNo) ||
-                !long.TryParse(textBox1.Text, out long studentNo))
-            {
-                MessageBox.Show("Please type numbers only for Student Number, Age, and contact Number", "invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
 
 
+            //       if (string.IsNullOrEmpty(textBox1.Text) ||
+            //string.IsNullOrEmpty(comboBox1.Text) ||
+            //string.IsNullOrEmpty(textBox2.Text) ||
+            //string.IsNullOrEmpty(textBox3.Text) ||
+            //string.IsNullOrEmpty(textBox4.Text) ||
+            //string.IsNullOrEmpty(textBox5.Text) ||
+            //string.IsNullOrEmpty(textBox6.Text))
+
+            //       {
+            //           MessageBox.Show("please Answer all the fields. ", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //           return;
+            //       }
+
+            //       if (!long.TryParse(textBox5.Text, out long age) ||
+            //           !long.TryParse(textBox6.Text, out long contactNo) ||
+            //           !long.TryParse(textBox1.Text, out long studentNo))
+            //       {
+            //           MessageBox.Show("Please type numbers only for Student Number, Age, and contact Number", "invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //           return;
+            //       }
 
 
-            StudentInfoClass.FirstName = textBox3.Text;
-            StudentInfoClass.LastName = textBox2.Text;
-            StudentInfoClass.MiddleName = textBox4.Text;
-            StudentInfoClass.Age = long.Parse(textBox5.Text);
-            StudentInfoClass.StudentNo = long.Parse(textBox1.Text);
-            StudentInfoClass.ContactNo = long.Parse(textBox6.Text);
-            StudentInfoClass.Program = comboBox1.Text;
+
+
+            
+                StudentInfoClass.FirstName = textBox3.Text;
+                StudentInfoClass.LastName = textBox2.Text;
+                StudentInfoClass.MiddleName = textBox4.Text;
+                StudentInfoClass.Age = long.Parse(textBox5.Text);
+                StudentInfoClass.StudentNo = long.Parse(textBox1.Text);
+                StudentInfoClass.ContactNo = long.Parse(textBox6.Text);
+                StudentInfoClass.Program = comboBox1.Text;
+                StudentInfoClass.Birthday = dateTimePicker1.Value.ToString("MM/dd/yyyy");
+                StudentInfoClass.Gender = comboBox2.Text;
+            
+
+
+
 
             // Open forrm2 na dialog
             Form2 frm = new Form2();
