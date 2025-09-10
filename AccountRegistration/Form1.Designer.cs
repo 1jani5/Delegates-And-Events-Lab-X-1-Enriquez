@@ -48,8 +48,8 @@
             panel1 = new Panel();
             label9 = new Label();
             label10 = new Label();
-            textBox8 = new TextBox();
             dateTimePicker1 = new DateTimePicker();
+            comboBox2 = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -222,8 +222,8 @@
             // 
             panel1.BackColor = SystemColors.ActiveBorder;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(comboBox2);
             panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(textBox8);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(label9);
             panel1.Controls.Add(button1);
@@ -272,19 +272,20 @@
             label10.TabIndex = 18;
             label10.Text = "Gender:";
             // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(293, 196);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(174, 23);
-            textBox8.TabIndex = 19;
-            // 
             // dateTimePicker1
             // 
             dateTimePicker1.Location = new Point(89, 264);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 20;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(295, 196);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(174, 23);
+            comboBox2.TabIndex = 21;
             // 
             // Form1
             // 
@@ -325,6 +326,6 @@
         private Label label9;
         private Label label10;
         private DateTimePicker dateTimePicker1;
-        private TextBox textBox8;
+        private ComboBox comboBox2;
     }
 }
