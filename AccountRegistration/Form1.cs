@@ -93,7 +93,7 @@ namespace AccountRegistration
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+                
 
             //       if (string.IsNullOrEmpty(textBox1.Text) ||
             //string.IsNullOrEmpty(comboBox1.Text) ||
@@ -148,7 +148,7 @@ namespace AccountRegistration
             }
             finally
             {
-                MessageBox.Show("Please input again in the fields mention. ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Double check Data inserted. ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
 
