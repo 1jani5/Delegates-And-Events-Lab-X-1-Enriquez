@@ -119,7 +119,8 @@ namespace AccountRegistration
 
 
 
-            
+            try
+            {
                 StudentInfoClass.FirstName = textBox3.Text;
                 StudentInfoClass.LastName = textBox2.Text;
                 StudentInfoClass.MiddleName = textBox4.Text;
@@ -129,7 +130,26 @@ namespace AccountRegistration
                 StudentInfoClass.Program = comboBox1.Text;
                 StudentInfoClass.Birthday = dateTimePicker1.Value.ToString("MM/dd/yyyy");
                 StudentInfoClass.Gender = comboBox2.Text;
-            
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please type numbers only for Student Number, Age, and Contact Number", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            catch (OverflowException)
+            {
+                MessageBox.Show("The number entered is too large. Please enter a valid number.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            finally
+            {
+                MessageBox.Show("Thank you for registering!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
 
 
